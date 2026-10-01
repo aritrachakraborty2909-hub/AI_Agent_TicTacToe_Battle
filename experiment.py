@@ -17,7 +17,7 @@ class ExperimentRunner:
         
         results = []
         for depth in range(1, 5):
-            agent = Agent("NEXUS", "X", depth=depth, heuristic_fn=heuristic_h1)
+            agent = Agent("a", "X", depth=depth, heuristic_fn=heuristic_h1)
             game = TicTacToe()
             
             start_time = time.perf_counter()
@@ -41,7 +41,7 @@ class ExperimentRunner:
         print(f"Experiment 1 complete. Results saved to {csv_file}\n")
 
     def run_agent_battle(self):
-        """Experiment 2: 10-Game AI Agent Battle (NEXUS vs TITAN)."""
+        """Experiment 2: 10-Game AI Agent Battle (AETHER vs CHRONOS)."""
         print("--- Running Experiment 2: AI Agent Battle ---")
         csv_file = os.path.join(self.output_dir, "battle_results.csv")
         
@@ -52,18 +52,18 @@ class ExperimentRunner:
             
             # Alternate starting player
             if game_num % 2 != 0:
-                p1_name, p1_h = "NEXUS", heuristic_h1
-                p2_name, p2_h = "TITAN", heuristic_h2
+                p1_name, p1_h = "AETHER", heuristic_h1
+                p2_name, p2_h = "CHRONOS", heuristic_h2
             else:
-                p1_name, p1_h = "TITAN", heuristic_h2
-                p2_name, p2_h = "NEXUS", heuristic_h1
+                p1_name, p1_h = "CHRONOS", heuristic_h2
+                p2_name, p2_h = "AETHER", heuristic_h1
 
             agent1 = Agent(p1_name, 'X', depth=3, heuristic_fn=p1_h)
             agent2 = Agent(p2_name, 'O', depth=3, heuristic_fn=p2_h)
 
             first_player = p1_name
-            nexus_nodes, titan_nodes = 0, 0
-            nexus_pruned, titan_pruned = 0, 0
+            aether_nodes, chronos_nodes = 0, 0
+            aether_pruned, chronos_pruned = 0, 0
             moves_count = 0
 
             start_time = time.perf_counter()
@@ -74,7 +74,7 @@ class ExperimentRunner:
                 game.make_move(move[0], move[1], current_agent.symbol)
                 moves_count += 1
 
-                if current_agent.name == "NEXUS":
+                if current_agent.name == "AETHER":
                     nexus_nodes += current_agent.last_nodes_eval
                     nexus_pruned += current_agent.last_nodes_pruned
                 else:
@@ -99,10 +99,10 @@ class ExperimentRunner:
                 "first": first_player,
                 "winner": winner_name,
                 "moves": moves_count,
-                "nexus_nodes": nexus_nodes,
-                "titan_nodes": titan_nodes,
-                "nexus_pruned": nexus_pruned,
-                "titan_pruned": titan_pruned,
+                "aether_nodes": aether_nodes,
+                "chronos_nodes": chronos_nodes,
+                "aether_pruned": aether_pruned,
+                "chronos_pruned": chronos_pruned,
                 "time_sec": f"{elapsed_time:.4f}"
             }
             game_records.append(record)

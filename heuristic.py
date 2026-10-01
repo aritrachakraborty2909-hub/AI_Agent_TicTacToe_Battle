@@ -1,6 +1,6 @@
 def heuristic_h1(game, player):
     """
-    Heuristic 1 (Line Threat Focus - NEXUS):
+    Heuristic 1 (Line Threat Focus - AETHER):
     Focuses on counting open lines, immediate threats, and double-line potentials.
     """
     opponent = 'O' if player == 'X' else 'X'
@@ -34,7 +34,7 @@ def heuristic_h1(game, player):
 
 def heuristic_h2(game, player):
     """
-    Heuristic 2 (Positional + Threat Focus - TITAN):
+    Heuristic 2 (Positional + Threat Focus - CHRONOS):
     Combines center and corner spatial control with line threat analysis.
     """
     opponent = 'O' if player == 'X' else 'X'

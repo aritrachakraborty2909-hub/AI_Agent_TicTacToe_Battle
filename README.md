@@ -3,8 +3,8 @@ Python-based Tic-Tac-Toe simulation analyzing Minimax search depth, Alpha-Beta p
 # Tic-Tac-Toe Laboratory Report
 
 ## Agents Configuration
-- **NEXUS**: Depth 3 | Heuristic $H1$ (Line & Threat Oriented)
-- **TITAN**: Depth 3 | Heuristic $H2$ (Positional & Center-Control Oriented)
+- **AETHER**: Depth 3 | Heuristic $H1$ (Line & Threat Oriented)
+- **CHRONOS**: Depth 3 | Heuristic $H2$ (Positional & Center-Control Oriented)
 
 ---
 
@@ -24,13 +24,13 @@ Python-based Tic-Tac-Toe simulation analyzing Minimax search depth, Alpha-Beta p
 ---
 
 ## Experiment 2: AI Agent Battle Summary (10 Games)
-- **NEXUS Wins**: 3
-- **TITAN Wins**: 3
+- **AETHER Wins**: 3
+- **CHRONOS Wins**: 3
 - **Draws**: 4
 - **First Player Win Rate Advantage**: First-player wins observed in 5 out of 10 matches.
 
 ### Key Analysis & Findings
 1. **Depth Effects**: Tactical decisions improve as depth increases. However, beyond depth 3 or 4 on a $3\times3$ grid, additional depth yields diminishing returns relative to computational costs.
-2. **Heuristic Influence**: NEXUS plays aggressively toward line traps, while TITAN prioritizes spatial dominance through early center and corner control.
+2. **Heuristic Influence**: AETHER plays aggressively toward line traps, while CHRONOS prioritizes spatial dominance through early center and corner control.
 3. **First-Player Advantage**: Moving first provides a structural initiative, yielding high win/draw rates under optimal decision steps.
 4. **Draw Rates**: High drawing rates occur when two optimal agents compete using balanced depth parameters.
