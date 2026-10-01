@@ -75,11 +75,11 @@ class ExperimentRunner:
                 moves_count += 1
 
                 if current_agent.name == "AETHER":
-                    nexus_nodes += current_agent.last_nodes_eval
-                    nexus_pruned += current_agent.last_nodes_pruned
+                    aether_nodes += current_agent.last_nodes_eval
+                    aether_pruned += current_agent.last_nodes_pruned
                 else:
-                    titan_nodes += current_agent.last_nodes_eval
-                    titan_pruned += current_agent.last_nodes_pruned
+                    chronos_nodes += current_agent.last_nodes_eval
+                    chronos_pruned += current_agent.last_nodes_pruned
 
                 # Swap turn
                 current_agent = agent2 if current_agent == agent1 else agent1
