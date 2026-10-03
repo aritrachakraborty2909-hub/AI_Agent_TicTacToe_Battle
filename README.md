@@ -484,6 +484,6 @@ Distributed under the **MIT License**. See `LICENSE` for more information.
 
 - **Course**: B.Tech. in Computer Science & Engineering (5th Semester)
 - **Subject**: Artificial Intelligence & Machine Learning Laboratory
-- **Assignment**: Assignment X_03 — AI Campus Route Navigator
+- **Assignment**: Assignment X_02 — AI Agent Tic-Tac-Toe Battle
 - **Institution**: University of Calcutta (Technology Campus)
 - **Author**: Aritra Chakraborty ([@aritrachakraborty2909-hub](https://github.com/aritrachakraborty2909-hub))
