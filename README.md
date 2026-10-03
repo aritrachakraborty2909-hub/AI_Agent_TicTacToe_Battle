@@ -40,6 +40,7 @@
 - [🛠️ Modifying \& Customizing Experiments](#️-modifying--customizing-experiments)
 - [✅ Compliance Checklist](#-compliance-checklist)
 - [📜 License](#-license)
+- [🎓 Academic Attribution](#-academic-attribution)
 
 ---
 
@@ -479,7 +480,10 @@ Distributed under the **MIT License**. See `LICENSE` for more information.
 
 ---
 
-<div align="center">
-  <sub>B.Tech 5th Semester — Artificial Intelligence & Machine Learning Laboratory</sub><br>
-  <sub>Academic Project Repository</sub>
-</div>
+## 🎓 Academic Attribution
+
+- **Course**: B.Tech. in Computer Science & Engineering (5th Semester)
+- **Subject**: Artificial Intelligence & Machine Learning Laboratory
+- **Assignment**: Assignment X_03 — AI Campus Route Navigator
+- **Institution**: University of Calcutta (Technology Campus)
+- **Author**: Aritra Chakraborty ([@aritrachakraborty2909-hub](https://github.com/aritrachakraborty2909-hub))
